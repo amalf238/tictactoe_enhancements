@@ -1,0 +1,35 @@
+name: tic_tac_toe_amal
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^4.0.4
+  cupertino_icons: ^1.0.8
+  typed_data: ^1.4.0
+  win32: ^5.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  test: ^1.24.3
+
+flutter:
+  uses-material-design: true
+  assets:
+    - resources/BG.png
+    - resources/easy.png
+    - resources/medium.png
+    - resources/hard.png
+    - resources/alien.png
+    - resources/astro.png
+    - resources/robot.png
+    - resources/rocket.png
+    - resources/satelight.png
