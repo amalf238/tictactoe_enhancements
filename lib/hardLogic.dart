@@ -139,7 +139,7 @@ int? _checkOppositeCorner(List<String> board, String userSym) {
   for (var corner in corners) {
     if (board[corner] == userSym) {
       int opposite = _getOppositeCorner(corner);
-      if (board[opposite].isEmpty) {
+      if (opposite != -1 && board[opposite].isEmpty) {
         return opposite;
       }
     }
