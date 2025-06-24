@@ -332,13 +332,17 @@ class _GameScreenState extends State<GameScreen> {
   }
 
   void _undoLastMove() {
-    if (moveHistory.length < 2) return;
+    if (moveHistory.isEmpty) return;
     setState(() {
       final lastMove = moveHistory.removeLast();
       displayXO[lastMove['index']] = '';
 
-      final secondLastMove = moveHistory.removeLast();
-      displayXO[secondLastMove['index']] = '';
+      // If the undone move belonged to the AI, also revert the preceding
+      // player move so the board state stays consistent.
+      if (lastMove['symbol'] == 'O' && moveHistory.isNotEmpty) {
+        final previousMove = moveHistory.removeLast();
+        displayXO[previousMove['index']] = '';
+      }
 
       matchedIndexes.clear();
       resultDeclaration = '';
