@@ -70,7 +70,7 @@ void main() {
 
     // Player symbol = 'X'
     // Create a scenario where Pplayer has already 2 in a row:
-    // AI will block as long as it donen't have a chance to win
+    // AI will block as long as it doesn't have a chance to win
     test('5) AI blocks user if user has two in a row', () {
       List<String> board = ['X', 'X', '', '', 'O', '', '', '', 'O'];
       int? move = hardAIMove(board);
