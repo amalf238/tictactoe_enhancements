@@ -25,17 +25,14 @@ void main() {
     test('2) Fork creation => AI picks spot that gives two ways to win', () {
       // This scenario is contrived but shows a potential fork:
       // AI can place 'O' to threaten 2 lines at once
+      // Set up a real fork opportunity. With O's at indices 1 and 5 and X in the
+      // center, placing O at index 2 will create two winning threats (rows
+      // 0-1-2 and 2-5-8).
       List<String> board = [
-        'O', '', '', // indexes 0,1,2
-        '', 'X', '', // indexes 3,4,5
-        '', '', 'O' // indexes 6,7,8
+        '', 'O', '', // indexes 0,1,2
+        '', 'X', 'O', // indexes 3,4,5
+        '', '', '' // indexes 6,7,8
       ];
-      // Suppose placing O at index 2 or something might create a fork
-      // We'll guess the AI picks index 2 (or some correct fork spot),
-      // but you must set up the board so that indeed it creates a fork.
-
-      // Adjust this board so the "fork" is truly possible:
-      // For example, put an AI piece in [0], [8], so there's a diagonal threat and something else
 
       // Let's see if the method picks the correct index. The index you
       // expect depends on your logic & how the board is set up. We'll test for a known spot.
