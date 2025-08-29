@@ -1,6 +1,6 @@
 # Tic Tac Toe Enhancements
 
-A creative twist of a tictactoe game implemented in Flutter that uses outer space characters with eye-catching animations instead of the traditional X and O.
+A creative twist on a traditional tictactoe game implemented in Flutter, that uses outer space characters with eye-catching animations instead of the traditional X and O.
 
 ## Features
 
