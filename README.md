@@ -1,6 +1,6 @@
 # Tic Tac Toe Enhancements
 
-A polished Flutter implementation of the classic Tic Tac Toe game featuring multiple difficulty levels and playful animations.
+A creative twist of a tictactoe game implemented in Flutter that uses outer space characters with eye-catching animations instead of the traditional X and O.
 
 ## Features
 
